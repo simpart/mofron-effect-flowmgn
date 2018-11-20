@@ -1,0 +1,25 @@
+{
+  "name": "mofron-effect-flowmgn",
+  "version": "0.0.1",
+  "description": "flow margin effect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpart/mofron-effect-flowmgn.git"
+  },
+  "dependencies": {
+    "mofron-effect-margin" : ""
+  },
+  "keywords": [
+    "front-end"
+  ],
+  "author": "simparts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpart/mofron-effect-flowmgn/issues"
+  },
+  "homepage": "https://github.com/simpart/mofron-effect-flowmgn#readme"
+}
