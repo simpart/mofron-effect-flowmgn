@@ -20,21 +20,21 @@ mf.effect.FlowMgn = class extends Margin {
         }
     }
     
-    execute (prm) {
+    execute (cflg, scb, iflg) {
         try {
-            if ( (undefined === prm) &&
+            if ( (undefined === cflg) &&
                  (true === this.status()) &&
                  (false === this.component().visible()) ) {
                 return;
             }
-            if ( (undefined === prm) && (true === this.status()) ||
-                 (true === prm) ) {
+            if ( (undefined === cflg) && (true === this.status()) ||
+                 (true === cflg) ) {
                 let mg     = 'margin' + '-' + this.type();
                 let setmgn = {};
                 setmgn[mg] = this.value()[0];
                 this.component().adom().style(setmgn);
             }
-            super.execute(prm);
+            super.execute(cflg, scb, iflg);
         } catch (e) {
             console.error(e.stack);
             throw e;
